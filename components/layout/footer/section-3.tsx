@@ -27,7 +27,7 @@ const Section3 = () => {
    return (
       <section>
          <div className="relative text-center">
-            <div className="absolute bottom-0  hidden w-full overflow-hidden    lg:block">
+            <div className="absolute bottom-0  hidden w-full overflow-hidden    md:block">
                <div className="relative   -mr-16 h-[300px] bg-body-bg bg-contain bg-center bg-no-repeat"></div>
             </div>
             <div className="container md:px-12">
