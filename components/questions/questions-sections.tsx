@@ -76,57 +76,59 @@ const QuestionsSections = () => {
             setQuestion(response.data.data);
          }
 
-         toast.success('تم حفظ الاجابة', {
-            duration: 4000,
+         toast.success('Answer Saved!', {
+            duration: 3000,
          });
       } catch (error: any) {
          toast.error(translate({ id: 'res:500' }), {
-            duration: 4000,
+            duration: 3000,
          });
       }
       setLoading(false);
    };
    return (
       <React.Fragment>
-         <div className="container">
-            <div className="row">
-               <div className="lg:col-4 lg:offset-4">
-                  <div className="mt-5">
-                     <div>
-                        <div className="p-1 sm:p-1">
-                           <div className="pt-1">
-                              <form noValidate className="relative" autoComplete="off">
-                                 {/* question_1 */}
-                                 <CustomRadioInput
-                                    label={translate({
-                                       id: `web:question_${question?.current_question}`,
-                                    })}
-                                    subLabel={
-                                       question?.questions[question?.current_question - 1]
-                                          ?.question_text
-                                    }
-                                    // isRequired
-                                    isInline={false}
-                                    callBack={val => submitForm(val)}
-                                    options={question?.questions[
-                                       question?.current_question - 1
-                                    ]?.options.map(item => {
-                                       return { label: item.option_text, value: item.id };
-                                    })}
-                                    id="question_1"
-                                    // error={errors.question_1?.message}
-                                    // {...register('question_1', {
-                                    //    required: translate({ id: 'validation:required' }),
-                                    // })}
-                                 />
-                              </form>
+         {!loading && (
+            <div className="container">
+               <div className="row">
+                  <div className="lg:col-4 lg:offset-4">
+                     <div className="mt-5">
+                        <div>
+                           <div className="p-1 sm:p-1">
+                              <div className="pt-1">
+                                 <form noValidate className="relative" autoComplete="off">
+                                    {/* question_1 */}
+                                    <CustomRadioInput
+                                       label={translate({
+                                          id: `web:question_${question?.current_question}`,
+                                       })}
+                                       subLabel={
+                                          question?.questions[question?.current_question - 1]
+                                             ?.question_text
+                                       }
+                                       // isRequired
+                                       isInline={false}
+                                       callBack={val => submitForm(val)}
+                                       options={question?.questions[
+                                          question?.current_question - 1
+                                       ]?.options.map(item => {
+                                          return { label: item.option_text, value: item.id };
+                                       })}
+                                       id="question_1"
+                                       // error={errors.question_1?.message}
+                                       // {...register('question_1', {
+                                       //    required: translate({ id: 'validation:required' }),
+                                       // })}
+                                    />
+                                 </form>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
+         )}
       </React.Fragment>
    );
 };

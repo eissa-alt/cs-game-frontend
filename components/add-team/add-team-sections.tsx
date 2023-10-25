@@ -70,7 +70,7 @@ const AddTeamSections = () => {
          console.log(error, 'error');
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else if (error?.response?.status === 422) {
             const responseErrors = error?.response?.data?.data;
@@ -79,15 +79,15 @@ const AddTeamSections = () => {
                   message: responseErrors[key][0],
                });
                // toast.error(responseErrors[key][0], {
-               //    duration: 4000,
+               //    duration: 3000,
                // });
             });
             // toast.error(error?.response?.data?.status, {
-            //    duration: 4000,
+            //    duration: 3000,
             // });
          } else {
             toast.error(translate({ id: 'res:500' }), {
-               duration: 4000,
+               duration: 3000,
             });
          }
       }
@@ -98,7 +98,7 @@ const AddTeamSections = () => {
       <React.Fragment>
          <div className="container">
             <div className="row">
-               <div className="lg:col-4 lg:offset-4">
+               <div className="mx-auto  lg:col-4">
                   <form
                      noValidate
                      onSubmit={handleSubmit(submitForm)}
@@ -123,7 +123,7 @@ const AddTeamSections = () => {
                               </div>
                            </div>
                            <div className="col-12 mt-2">
-                              <SubmitBtn noIcon id="submit-btn" loading={loading} text={'التالي'} />
+                              <SubmitBtn noIcon id="submit-btn" loading={loading} text={'NEXT'} />
                            </div>
                         </div>
                      </div>

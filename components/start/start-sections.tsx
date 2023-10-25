@@ -27,12 +27,12 @@ const StartSections = () => {
             `contests-status/${router.query?.slug}/${router.query?.team_id}?lang=${lang}`
          );
          if (response.data.status === 'failed') {
-            toast.error('يرجى الانتظار', {
-               duration: 4000,
+            toast.error('Please wait', {
+               duration: 3000,
             });
          } else {
-            toast.success('تم بدأ التحدي', {
-               duration: 4000,
+            toast.success('Game Started', {
+               duration: 3000,
             });
             router.replace(
                `/contests/${router.query?.slug}/team/${router.query?.team_id}/questions`
@@ -40,7 +40,7 @@ const StartSections = () => {
          }
       } catch (error: any) {
          toast.error(translate({ id: 'res:500' }), {
-            duration: 4000,
+            duration: 3000,
          });
       }
       setLoading(false);
@@ -49,14 +49,16 @@ const StartSections = () => {
       <React.Fragment>
          <div className="container">
             <div className="row">
-               <div className="lg:col-4 lg:offset-4">
+               <div className="col-12 mt-10">
+                  <div className="mb-5 text-center">
+                     <h1 className="col-12 relative   font-black text-white">
+                        <div className="text-4xl">{'Trafia Game'}</div>
+                        <div className="text-2xl">{'Cybersecurity Annual Gathering 2023'}</div>
+                     </h1>
+                  </div>
+               </div>
+               <div className="mx-auto lg:col-3">
                   <div className="mt-5">
-                     <div className="mb-10 text-center text-xl font-black text-white">
-                        {'التحدي'}
-                     </div>
-                     <div className="mb-3 text-center text-white">
-                        {'لإكمال التحدي، يجب عليك الإجابة على 10 أسئلة'}
-                     </div>
                      <ButtonBtn
                         id=""
                         callBack={() => {
@@ -64,7 +66,7 @@ const StartSections = () => {
                         }}
                         noIcon
                         loading={loading}
-                        text={'البدأ'}
+                        text={'START'}
                      />
                   </div>
                </div>

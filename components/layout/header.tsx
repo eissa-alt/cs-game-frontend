@@ -25,20 +25,7 @@ const MiniHeader = () => {
             <div className="row py-6">
                <React.Fragment>
                   <div className="col-6 self-center">
-                     <div className="h-[60px] w-[140px]">
-                        <Image
-                           src="/images/saudi_payments.svg"
-                           alt="SSC logo"
-                           // width="150"
-                           // height="71"
-                           layout="fill"
-                           objectFit="contain"
-                           className=" rounded-lg"
-                        />
-                     </div>
-                  </div>
-                  <div className="col-6 self-center">
-                     <div className="h-[60px] w-[140px] rtl:mr-auto">
+                     <div className="h-[60px] w-[140px]  ">
                         <Image
                            src="/images/cyber_security_dept.svg"
                            alt="SSC logo"
@@ -47,6 +34,19 @@ const MiniHeader = () => {
                            layout="fill"
                            objectFit="contain"
                            className="rounded-lg"
+                        />
+                     </div>
+                  </div>
+                  <div className="col-6 self-center">
+                     <div className="ml-auto h-[60px]  w-[140px]">
+                        <Image
+                           src="/images/saudi_payments.svg"
+                           alt="SSC logo"
+                           // width="150"
+                           // height="71"
+                           layout="fill"
+                           objectFit="contain"
+                           className=" rounded-lg"
                         />
                      </div>
                   </div>

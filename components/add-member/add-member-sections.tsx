@@ -93,7 +93,7 @@ const AddMemberSections = () => {
          console.log(error, 'error');
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else if (error?.response?.status === 422) {
             const responseErrors = error?.response?.data?.data;
@@ -102,15 +102,15 @@ const AddMemberSections = () => {
                   message: responseErrors[key][0],
                });
                // toast.error(responseErrors[key][0], {
-               //    duration: 4000,
+               //    duration: 3000,
                // });
             });
             // toast.error(error?.response?.data?.status, {
-            //    duration: 4000,
+            //    duration: 3000,
             // });
          } else {
             toast.error(translate({ id: 'res:500' }), {
-               duration: 4000,
+               duration: 3000,
             });
          }
       }
@@ -139,7 +139,7 @@ const AddMemberSections = () => {
          console.log(error, 'error');
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else if (error?.response?.status === 422) {
             // const responseErrors = error?.response?.data?.data;
@@ -148,18 +148,18 @@ const AddMemberSections = () => {
             //       message: responseErrors[key][0],
             //    });
             //    // toast.error(responseErrors[key][0], {
-            //    //    duration: 4000,
+            //    //    duration: 3000,
             //    // });
             // });
             // toast.error(error?.response?.data?.status, {
-            //    duration: 4000,
+            //    duration: 3000,
             // });
             toast.error(translate({ id: 'res:500' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else {
             toast.error(translate({ id: 'res:500' }), {
-               duration: 4000,
+               duration: 3000,
             });
          }
       }
@@ -170,18 +170,26 @@ const AddMemberSections = () => {
          <React.Fragment>
             <div className="container">
                <div className="row">
-                  <div className="lg:col-4 lg:offset-4">
-                     <div className="text-center text-xl font-bold text-white">اسم الفريق</div>
-                     <div className="mb-5 text-center text-white">{team?.name}</div>
-                     <div className="mb-3 text-center text-white">{'يرجى إضافة اعضاء الفريق'}</div>
-
-                     <div className="mb-4 rounded-lg border border-white">
-                        <div className="p-1 text-center text-white">
-                           {team?.members?.map((item, index) => (
-                              <div key={index}>{item.name}</div>
-                           ))}
-                        </div>
+                  <div className="mx-auto lg:col-4">
+                     <div className="text-center text-xl font-bold text-white">Team Name</div>
+                     <div className="mb-5 text-center text-white">
+                        <span className="rounded-full bg-white px-4 text-primary">
+                           {team?.name}
+                        </span>
                      </div>
+                     <div className="mb-3 text-center text-white">
+                        {'Please add your team members'}
+                     </div>
+                     <div className="mb-4">
+                        {team?.members?.map((item, index) => (
+                           <div key={index} className=" mb-1 text-center">
+                              <span className="rounded-full bg-white px-4 text-center text-primary">
+                                 {item.name}
+                              </span>
+                           </div>
+                        ))}
+                     </div>
+
                      <form
                         noValidate
                         onSubmit={handleSubmit(submitForm)}
@@ -205,8 +213,8 @@ const AddMemberSections = () => {
                                     />
                                  </div>
                               </div>
-                              <div className="col-12 mt-2">
-                                 <SubmitBtn noIcon id="submit-btn" loading={loading} text={'اضف'} />
+                              <div className="col-12 mt-1">
+                                 <SubmitBtn noIcon id="submit-btn" loading={loading} text={'ADD'} />
                               </div>
                            </div>
                         </div>
@@ -214,7 +222,7 @@ const AddMemberSections = () => {
                      <div className="mt-5">
                         <hr className="mb-3" />
                         <div className="mb-3 text-center text-white">
-                           {'عند استكمال اضافة جميع الاعضاء يرجى الضغط على التآكيد'}
+                           {'When you have completed adding all members, please click confirm'}
                         </div>
                         <ButtonBtn
                            id=""
@@ -223,7 +231,7 @@ const AddMemberSections = () => {
                            }}
                            noIcon
                            loading={loading2}
-                           text={'تأكيد'}
+                           text={'CONFIRM'}
                         />
                      </div>
 

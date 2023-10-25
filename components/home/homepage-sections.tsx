@@ -41,29 +41,29 @@ const HomePageSections = () => {
          <div className="container">
             <div className=" text-center text-white">
                <div>
-                  <h1 className="col-12 relative  text-4xl font-black text-white">
-                     <div>{'لعبــــــــــــة'}</div>
-                     <div>{'نحلم ونحقق'}</div>
-                     <div className="mt-10">
-                        {loading ? (
-                           <div>جاري التحميل</div>
-                        ) : (
-                           <React.Fragment>
-                              {contests.map((item, index) => (
-                                 <div className="mb-2" key={index}>
-                                    <NextLink
-                                       href={`/contests/${item.slug}/add-team`}
-                                       className={
-                                          'text-md inline-block rounded-full border border-white bg-primary  px-10 py-3 text-center font-medium leading-5 text-white transition-colors duration-150 hover:bg-primary-600 focus:outline-none  active:bg-primary'
-                                       }>
-                                       {item.name}
-                                    </NextLink>
-                                 </div>
-                              ))}
-                           </React.Fragment>
-                        )}
-                     </div>
+                  <h1 className="col-12 relative   font-black text-white">
+                     <div className="text-4xl">{'Trafia Game'}</div>
+                     <div className="text-2xl">{'Cybersecurity Annual Gathering 20223'}</div>
                   </h1>
+                  <div className="mt-10">
+                     {loading ? (
+                        <div>Loading ...</div>
+                     ) : (
+                        <React.Fragment>
+                           {contests.map((item, index) => (
+                              <div className="mb-2" key={index}>
+                                 <NextLink
+                                    href={`/contests/${item.slug}/add-team`}
+                                    className={
+                                       'text-md inline-block rounded-full border border-white bg-primary  px-10 py-3 text-center font-medium leading-5 text-white transition-colors duration-150 hover:bg-primary-600 focus:outline-none  active:bg-primary'
+                                    }>
+                                    {item.name}
+                                 </NextLink>
+                              </div>
+                           ))}
+                        </React.Fragment>
+                     )}
+                  </div>
                </div>
             </div>
          </div>

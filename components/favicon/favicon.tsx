@@ -11,7 +11,7 @@ const Favicon = () => {
       <React.Fragment>
          <meta name="apple-mobile-web-app-capable" content="yes" />
          <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-         <meta name="apple-mobile-web-app-title" content="Travia Game SAB" />
+         <meta name="apple-mobile-web-app-title" content="Travia Game SP" />
          {/* //todo: to check */}
          <meta name="format-detection" content="telephone=no" />
          <meta name="mobile-web-app-capable" content="yes" />

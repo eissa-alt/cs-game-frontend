@@ -88,7 +88,7 @@ const Question10 = ({ step, question }: Question10Props) => {
          console.log(error, 'error');
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else {
             toast.error('something went wrong!');

@@ -67,7 +67,7 @@ const UserInfoSections = () => {
          console.log(error, 'error');
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else if (error?.response?.status === 422) {
             const responseErrors = error?.response?.data?.data;
@@ -76,15 +76,15 @@ const UserInfoSections = () => {
                   message: responseErrors[key][0],
                });
                // toast.error(responseErrors[key][0], {
-               //    duration: 4000,
+               //    duration: 3000,
                // });
             });
             // toast.error(error?.response?.data?.status, {
-            //    duration: 4000,
+            //    duration: 3000,
             // });
          } else {
             toast.error(translate({ id: 'res:500' }), {
-               duration: 4000,
+               duration: 3000,
             });
          }
          setLoading(false);

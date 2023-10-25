@@ -73,7 +73,7 @@ const CheckInvitationForm = () => {
          setLoading(false);
          if (error?.response?.status === 403) {
             toast.error(translate({ id: 'res:recaptcha_failed' }), {
-               duration: 4000,
+               duration: 3000,
             });
          } else if (error.response?.status === 404) {
             toast.error(translate({ id: 'res:wrong_code' }));
