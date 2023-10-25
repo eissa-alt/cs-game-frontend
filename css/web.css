@@ -1,0 +1,95 @@
+#nprogress .bar {
+   /* background-color: #df1b22 !important; */
+   background-color: #06fff8 !important;
+}
+
+body {
+   /* background-color: #000000; */
+   /* background-image: url(/images/bg-body.png); */
+   background-position: center center;
+   background-repeat: repeat;
+   /* background-size: 500px; */
+   /* box-shadow: 0 0 0 3px hsla(77, 100%, 38%, 0.502); */
+   /* animation: animatedBackground 10s linear infinite; */
+   /* height: 100% !important; */
+}
+
+main {
+   /* background-color: #000000; */
+}
+
+.flip-x {
+   transform: scaleX(-1);
+}
+
+.custom-input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background-color: transparent;
+   /* border-color: #495057; */
+   border-width: 1px;
+   font-weight: 500;
+   padding: 6px 12px;
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+.required-label::after {
+   content: '*';
+   color: #ffd33a;
+}
+
+textarea {
+   resize: none;
+}
+
+.absolute-center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.absolute-v-center {
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+/* fix box-shadow input tailwind3/tailwindform/react-select  */
+.react-select input {
+   box-shadow: none !important;
+}
+
+.lottie-fix svg {
+   cursor: default;
+}
+
+.brand-bg {
+   /* border-image: linear-gradient(to right, red, red); */
+   background: rgb(226, 163, 40);
+   background: linear-gradient(
+      -116deg,
+      rgba(226, 163, 40, 1) 14%,
+      rgba(0, 155, 152, 1) 67%,
+      rgba(0, 155, 152, 1) 100%
+   );
+   border-width: 1px;
+   border-style: solid;
+   border-image: linear-gradient(
+         -116deg,
+         rgba(226, 163, 40, 1) 14%,
+         rgba(0, 155, 152, 1) 67%,
+         rgba(0, 155, 152, 1) 100%
+      )
+      1;
+}
+
+[dir='ltr'] .polygon-btn {
+   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+[dir='rtl'] .polygon-btn {
+   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}

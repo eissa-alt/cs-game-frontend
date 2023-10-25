@@ -1,0 +1,266 @@
+[
+    {
+        "key": "question_1",
+        "label": "First Question",
+        "sub_label": "What is the first NEOM project?",
+        "options": [
+            "Sindala",
+            "The Line",
+            "Trogena"
+        ],
+        "answer": "Sindala"
+    },
+    {
+        "key": "question_2",
+        "label": "Second Question",
+        "sub_label": "How many AlUla development projects are there?",
+        "options": [
+            "7",
+            "2",
+            "4"
+        ],
+        "answer": "4"
+    },
+    {
+        "key": "question_3",
+        "label": "Third Question",
+        "sub_label": "What is the name of the nature reserve established in AlUla?",
+        "options": [
+            "Upper Shada Mountain Reserve",
+            "Saja and Umm Al Ramth Reserve",
+            "Sharaan Nature Reserve"
+        ],
+        "answer": "Sharaan Nature Reserve"
+    },
+    {
+        "key": "question_4",
+        "label": "Fourth Question",
+        "sub_label": "How big is The Line?",
+        "options": [
+            "34 km",
+            "340 km",
+            "500 kilometers"
+        ],
+        "answer": "34 km"
+    },
+    {
+        "key": "question_5",
+        "label": "Fifth Question",
+        "sub_label": "Who carved the foundation stone for Diriyah Gate?",
+        "options": [
+            "Kamal Al-Muallem",
+            "Talal Al-Takhis",
+            "Ali Al-Takhis"
+        ],
+        "answer": "Ali Al-Takhis"
+    },
+    {
+        "key": "question_6",
+        "label": "Sixth Question",
+        "sub_label": "What was Diriyah called in the past?",
+        "options": [
+            "Millipede",
+            "Al-Shuwaihatiya",
+            "Jubba"
+        ],
+        "answer": "Millipede"
+    },
+    {
+        "key": "question_7",
+        "label": "Seventh Question",
+        "sub_label": "When was Diriyah established?",
+        "options": [
+            "1446 AD - 850 AH",
+            "1442 AD - 846 AH",
+            "1440 AD - 844 AH"
+        ],
+        "answer": "1446 AD - 850 AH"
+    },
+    {
+        "key": "question_8",
+        "label": "Eighth Question",
+        "sub_label": "How long is the sports track/boulevard?",
+        "options": [
+            "135 km",
+            "130 km",
+            "145 km"
+        ],
+        "answer": "135 km"
+    },
+    {
+        "key": "question_9",
+        "label": "Ninth Question",
+        "sub_label": "What is the classification of King Salman's Park?",
+        "options": [
+            "The largest urban park in the world",
+            "The largest zoo in the world",
+            "The largest flower garden in the world"
+        ],
+        "answer": "The largest urban park in the world"
+    },
+    {
+        "key": "question_10",
+        "label": "Tenth Question",
+        "sub_label": "Where is the Cube project located in Riyadh?",
+        "options": [
+            "The intersection of King Salman and King Khalid roads",
+            "The Intersection of Turki 1st and King Abdullah Roads",
+            "The intersection of Olaya Road and Makkah Al-Mukarramah Road"
+        ],
+        "answer": "The intersection of King Salman and King Khalid roads"
+    },
+    {
+        "key": "question_11",
+        "label": "Eleventh Question",
+        "sub_label": "Who said this phrase: \"The Kingdom is progressing steadily in a huge program aimed at development and change... and our ambition has no limits.\"?",
+        "options": [
+            "King Abdulaziz Al Saud, may God have mercy on him",
+            "King Salman bin Abdulaziz Al Saud",
+            "Crown Prince Mohammed bin Salman Al Saud"
+        ],
+        "answer": "Crown Prince Mohammed bin Salman Al Saud"
+    },
+    {
+        "key": "question_12",
+        "label": "Twelfth Question",
+        "sub_label": "In what year was the Saudi National day declared as an official holiday?",
+        "options": [
+            "2010",
+            "2015",
+            "2005"
+        ],
+        "answer": "2005"
+    },
+    {
+        "key": "question_13",
+        "label": "Thirteenth Question",
+        "sub_label": "How many kings ruled the kingdom since unification until now?",
+        "options": [
+            "9 kings",
+            "8 kings",
+            "7 kings"
+        ],
+        "answer": "7 kings"
+    },
+    {
+        "key": "question_14",
+        "label": "Fourteenth Question",
+        "sub_label": "How long has it been since the founding of the Kingdom of Saudi Arabia?",
+        "options": [
+            "91 years",
+            "88 years",
+            "93 years"
+        ],
+        "answer": "93 years"
+    },
+    {
+        "key": "question_15",
+        "label": "Fifteenth Question",
+        "sub_label": "When was Saudi Vision 2030 launched?",
+        "options": [
+            "2018",
+            "2017",
+            "2016"
+        ],
+        "answer": "2016"
+    },
+    {
+        "key": "question_16",
+        "label": "Sixteenth Question",
+        "sub_label": "How many regions are there in the Kingdom?",
+        "options": [
+            "17 regions",
+            "22 regions",
+            "13 regions"
+        ],
+        "answer": "13 regions"
+    },
+    {
+        "key": "question_17",
+        "label": "Seventeenth Question",
+        "sub_label": "How long did King Abdulaziz's ruled the Kingdom?",
+        "options": [
+            "52 years",
+            "33 years",
+            "50 years"
+        ],
+        "answer": "52 years"
+    },
+    {
+        "key": "question_18",
+        "label": "Eighteenth Question",
+        "sub_label": "When was the first royal decree issued to unify all parts of the modern Saudi state under the name of the Kingdom of Saudi Arabia?",
+        "options": [
+            "1930",
+            "1931",
+            "1932"
+        ],
+        "answer": "1932"
+    },
+    {
+        "key": "question_19",
+        "label": "Nineteenth Question",
+        "sub_label": "Who was the first king to be named custodian of the Two Holy Mosques?",
+        "options": [
+            "King Abdullah bin Abdulaziz Al Saud",
+            "King Khalid bin Abdulaziz Al Saud",
+            "King Fahd bin Abdulaziz Al Saud"
+        ],
+        "answer": "King Fahd bin Abdulaziz Al Saud"
+    },
+    {
+        "key": "question_20",
+        "label": "Twentieth Question",
+        "sub_label": "When was the first credit cards and ATMs launched by SAB?",
+        "options": [
+            "1985 and 1991",
+            "1984 and 1990",
+            "1987 and 1999"
+        ],
+        "answer": "1984 and 1990"
+    },
+    {
+        "key": "question_22",
+        "label": "Twenty-Second Question",
+        "sub_label": "When did SAB issue the financial importing funding for the first batch of cars in the Kingdom?",
+        "options": [
+            "1940",
+            "1930",
+            "1935"
+        ],
+        "answer": "1930"
+    },
+    {
+        "key": "question_23",
+        "label": "Twenty-Third Question",
+        "sub_label": "How many trees did SAB plant in 2022?",
+        "options": [
+            "One million trees",
+            "Two million trees",
+            "900 thousand trees"
+        ],
+        "answer": "One million trees"
+    },
+    {
+        "key": "question_24",
+        "label": "Twenty-Fourth Question",
+        "sub_label": "What are the names of the Saudi astronauts in 2023?",
+        "options": [
+            "Rayana Barnawi and Ali Al-Qarni",
+            "Sultan bin Salman bin Abdulaziz Al Saud",
+            "Sultan Saif Al Neyadi and Hazza Al Mansouri"
+        ],
+        "answer": "Rayana Barnawi and Ali Al-Qarni"
+    },
+    {
+        "key": "question_25",
+        "label": "Twenty-Fifth Question",
+        "sub_label": "What is the name of the first Saudi brand to manufacture electric cars in Saudi Arabia?",
+        "options": [
+            "Ceer",
+            "Lucid Motors",
+            "Tesla"
+        ],
+        "answer": "Ceer"
+    }
+]

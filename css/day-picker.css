@@ -1,0 +1,29 @@
+/* day-picker.css */
+/* Paint the today's date in red */
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+   color: #ffffff;
+   opacity: 1;
+   background-color: #9900e0;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+   background-color: #020617;
+   color: #ffffff;
+}
+
+.rdp-dropdown:focus-visible:not([disabled]) + .rdp-caption_label {
+   background-color: transparent;
+   border: 2px solid #0629f9;
+}
+
+.rdp-dropdown:focus-visible:not([disabled]) + .rdp-caption_label {
+   background-color: transparent;
+   border: 2px solid #0629f9;
+}
+
+select.rdp-dropdown option {
+   /* background-color: black; */
+}
