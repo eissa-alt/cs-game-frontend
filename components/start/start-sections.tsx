@@ -57,8 +57,11 @@ const StartSections = () => {
                      </h1>
                   </div>
                </div>
+               <div className="mt-4 text-center text-white">
+                  To complete the challenge, You must answer 20 questions
+               </div>
                <div className="mx-auto lg:col-3">
-                  <div className="mt-5">
+                  <div className="mt-4">
                      <ButtonBtn
                         id=""
                         callBack={() => {
