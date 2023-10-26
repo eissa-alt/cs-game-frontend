@@ -1,10 +1,10 @@
 {
-    "application_name": "Travia Game SP",
-    "site_name": "Travia Game SP",
-    "title": "Travia Game SP | Challenge",
-    "desc": "Travia Game SP | Challenge",
+    "application_name": "Trivia Game SP",
+    "site_name": "Trivia Game SP",
+    "title": "Trivia Game SP | Challenge",
+    "desc": "Trivia Game SP | Challenge",
     "400": "Page not found",
     "500": "Server error",
-    "about": "Travia Game SP | About",
-    "contact": "Travia Game SP | Contact Us"
+    "about": "Trivia Game SP | About",
+    "contact": "Trivia Game SP | Contact Us"
 }

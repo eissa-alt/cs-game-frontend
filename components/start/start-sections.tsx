@@ -52,7 +52,7 @@ const StartSections = () => {
                <div className="col-12 mt-10">
                   <div className="mb-5 text-center">
                      <h1 className="col-12 relative   font-black text-white">
-                        <div className="text-4xl">{'Travia Game'}</div>
+                        <div className="text-4xl">{'Trivia Game'}</div>
                         <div className="text-2xl">{'Cybersecurity Annual Gathering 2023'}</div>
                      </h1>
                   </div>

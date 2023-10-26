@@ -1,6 +1,6 @@
 {
     "main_title": "Welcome to the {{ site_name }}",
-    "event_name": "Travia Game SP",
+    "event_name": "Trivia Game SP",
     "subtitle_1": "Attend by invitation or registration",
     "subtitle_2": "The Platform will provide further details with respect to {{ event_name }} logistics, schedule and hospitality services",
     "access_code_label": "If you received an access code with your invitation letter, please enter it below",
