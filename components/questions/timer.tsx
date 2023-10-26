@@ -1,8 +1,7 @@
 // import { Translate } from '~/i18n';
 // import { useAuth } from '~/auth';
 import { addSeconds, fromUnixTime } from 'date-fns';
-import Cookies from 'js-cookie';
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo } from 'react';
 // import useCountDown from 'react-countdown-hook';
 import Countdown from 'react-countdown';
 
