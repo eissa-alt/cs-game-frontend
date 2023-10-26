@@ -60,6 +60,7 @@ const StartSections = () => {
                <div className="mt-4 text-center text-white">
                   To complete the challenge, You must answer 20 questions
                </div>
+               <div className="text-center text-white">Each question has 30 seconds to answer</div>
                <div className="mx-auto lg:col-3">
                   <div className="mt-4">
                      <ButtonBtn

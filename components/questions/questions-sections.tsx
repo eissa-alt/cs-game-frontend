@@ -12,6 +12,7 @@ import Axios from '~/utils/axios';
 import { QuestionNewType } from '~/interfaces/question-new';
 import CustomRadioInput from '../shared/forms/custom-radio-input';
 import { toast } from 'react-hot-toast';
+import Timer from './timer';
 
 /******************************************************************
  *
@@ -24,8 +25,8 @@ const QuestionsSections = () => {
 
    const { lang, translate } = useTranslate();
    const [loading, setLoading] = useState(false);
+   const [isTimeUp, setIsTimeUp] = useState(false);
    const [question, setQuestion] = useState<QuestionNewType>();
-   // console.log(question, 'question');
 
    const router = useRouter();
    useEffect(() => {
@@ -62,6 +63,7 @@ const QuestionsSections = () => {
       const data = {
          question_id: question?.questions[question?.current_question - 1]?.id,
          option_id: value,
+         is_time_up: isTimeUp,
       };
 
       try {
@@ -74,6 +76,7 @@ const QuestionsSections = () => {
             router.replace(`/contests/${router.query?.slug}/team/${router.query?.team_id}/score`);
          } else {
             setQuestion(response.data.data);
+            setIsTimeUp(false);
          }
 
          toast.success('Answer Saved!', {
@@ -122,6 +125,10 @@ const QuestionsSections = () => {
                                     />
                                  </form>
                               </div>
+                              <Timer
+                                 currentTime={question?.current_question_start_time || 0}
+                                 setIsTimeUp={setIsTimeUp}
+                              />
                            </div>
                         </div>
                      </div>

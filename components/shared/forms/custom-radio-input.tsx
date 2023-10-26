@@ -71,6 +71,7 @@ const CustomRadioInput = forwardRef<any, InputProps>(
             {subLabel && (
                <div
                   className={classNames(
+                     'capitalize',
                      isInline
                         ? 'self-center text-center md:mb-5 md:col-3'
                         : 'self-center text-center'
