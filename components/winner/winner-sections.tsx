@@ -20,7 +20,7 @@ const WinnerSections = () => {
 
    const { lang, translate } = useTranslate();
    const [loading, setLoading] = useState(false);
-   const [winner, setWinner] = useState<WinnerType>();
+   const [winners, setWinners] = useState<WinnerType[]>([]);
    const start = async () => {
       if (loading) {
          return;
@@ -28,7 +28,7 @@ const WinnerSections = () => {
       setLoading(true);
       try {
          const response = await Axios.get(`get-winner/${router.query?.slug}?lang=${lang}`);
-         setWinner(response.data.data);
+         setWinners(response.data.data);
          // if (response.data.status === 'failed') {
          //    toast.error('Please wait', {
          //       duration: 3000,
@@ -60,16 +60,18 @@ const WinnerSections = () => {
                      </h1>
                   </div>
                </div>
-               {winner ? (
+               {winners.length > 0 ? (
                   <React.Fragment>
                      <Confetti />
-                     <div className="text-center">
-                        <span className="mt-5 inline-block rounded-full bg-white px-4 text-6xl text-primary">
-                           {winner.name}
-                        </span>
-                        <div className="mt-4 text-white">Score: {winner.score}</div>
-                        <div className="text-white">Completed at: {winner.duration} seconds</div>
-                     </div>
+                     {winners.map((item, index) => (
+                        <div key={index} className="text-center">
+                           <span className="mt-3 inline-block rounded-full bg-white px-4 text-3xl text-primary">
+                              {item.name}
+                           </span>
+                           <div className="mt-1 text-sm text-white">Score: {item.score}</div>
+                           <div className="text-sm text-white">Completed at: {item.duration}</div>
+                        </div>
+                     ))}
                   </React.Fragment>
                ) : (
                   <div className="mx-auto lg:col-3">
